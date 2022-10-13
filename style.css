@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 140%;
+  height: 140vh;
+  background-color: #00035a53;
+  position: relative;
+}
+
+.sun-container {
+  width: 20%;
+  height: 40%;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.sun-container > .circle-sun {
+  height: 40%;
+  width: 40%;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 60px solid yellow;
+  border-top: 30px solid transparent;
+  border-bottom: 50px solid transparent;
+  position: absolute;
+}
+
+.triangle1 {
+  bottom: 19%;
+  left: 37%;
+}
+
+.triangle2 {
+  left: 20%;
+  top: 40%;
+  transform: rotate(67deg); 
+}
+
+.triangle3 {
+  left: 33%;
+  top: 20%;
+  transform: rotate(130deg); 
+}
+
+.triangle4 {
+  left: 56%;
+  top: 21%;
+  transform: rotate(193deg); 
+}
+
+.triangle5 {
+  left: 63%;
+  top: 49%;
+  transform: rotate(270deg); 
+
+}
+
