@@ -7,7 +7,7 @@
 .container {
   width: 100%;
   height: 100vh;
-  background-color: #292c7053;
+  background-color: #b2ebf2;
   position: relative;
 }
 
@@ -23,48 +23,31 @@
 }
 
 .sun-container > .circle-sun {
-  height: 40%;
-  width: 40%;
+  height: 60%;
+  width: 60%;
   background-color: yellow;
   border-radius: 50%;
-}
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 60px solid yellow;
-  border-top: 30px solid transparent;
-  border-bottom: 50px solid transparent;
   position: absolute;
 }
 
-.triangle1 {
-  bottom: 15%;
-  left: 32%;
-}
-
-.triangle2 {
-  left: 18%;
-  top: 40%;
-  transform: rotate(67deg);
-}
-
-.triangle3 {
-  left: 25%;
-  top: 20%;
-  transform: rotate(125deg);
-}
-
-.triangle4 {
-  left: 56%;
-  top: 21%;
-  transform: rotate(193deg);
-}
-
-.triangle5 {
-  left: 63%;
-  top: 49%;
-  transform: rotate(270deg);
+.sun {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+  clip-path: polygon(
+    50% 2%,
+    38% 35%,
+    2% 35%,
+    30% 60%,
+    12% 98%,
+    50% 72%,
+    88% 98%,
+    70% 60%,
+    98% 35%,
+    62% 35%,
+    50% 2%
+  );
 }
 
 .mountain {
@@ -97,37 +80,37 @@
 
 .three1 {
   left: 250px;
-  top: 650px;
+  top: 600px;
 }
 
 .three2 {
   left: 350px;
-  top: 650px;
+  top: 555px;
 }
 
 .three3 {
   left: 400px;
-  top: 630px;
+  top: 610px;
 }
 
 .three4 {
   left: 550px;
-  top: 650px;
+  top: 600px;
 }
 
 .three5 {
   left: 950px;
-  top: 650px;
+  top: 600px;
 }
 
 .three6 {
   left: 1090px;
-  top: 680px;
+  top: 553px;
 }
 
 .three7 {
   left: 1165px;
-  top: 680px;
+  top: 600px;
 }
 
 .bush {
@@ -138,42 +121,41 @@
   height: 40px;
   border-radius: 10px;
   border-top: 50px solid transparent;
-  
 }
 
 .bush1 {
   left: 240px;
-  top: 635px;
+  top: 580px;
 }
 
 .bush2 {
   left: 340px;
-  top: 605px;
+  top: 540px;
 }
 
 .bush3 {
   left: 390px;
-  top: 612px;
+  top: 580px;
 }
 
 .bush4 {
   left: 540px;
-  top: 630px;
+  top: 570px;
 }
 
 .bush5 {
   left: 940px;
-  top: 631px;
+  top: 570px;
 }
 
 .bush6 {
   left: 1080px;
-  top: 645px;
+  top: 520px;
 }
 
 .bush7 {
   left: 1155px;
-  top: 663px;
+  top: 580px;
 }
 
 .sea {
@@ -191,13 +173,213 @@
   position: absolute;
   width: 100px;
   height: 20px;
- background-color:   #292c7053;
-/* border-radius: 50% 50%  50% 30% /30% 30% 50% 50%;*/
-/* border-bottom: 20px;*/
+  background-color: #b2ebf2;
+  border-radius: 50% 50% 50% 30% /30% 30% 50% 50%;
   top: -10px;
   left: 100px;
-
-
-  
 }
+
+.sea2 {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #b2ebf2;
+  z-index: 15;
+  top: -5px;
+  left: 390px;
+  border-radius: 50% 50% 50% 30% /30% 30% 50% 50%;
+}
+
+.sea3 {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #b2ebf2;
+  z-index: 15;
+  top: -12px;
+  left: 890px;
+  border-radius: 50% 50% 50% 30% /30% 30% 50% 50%;
+}
+
+.sea4 {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #b2ebf2;
+  z-index: 13px;
+  top: -15px;
+  right: 480px;
+  border-radius: 50% 50% 50% 30% /30% 30% 50% 50%;
+}
+
+.sea5 {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #b2ebf2;
+  z-index: 13px;
+  top: -16px;
+  right: 100px;
+  border-radius: 50% 50% 50% 30% /30% 30% 50% 50%;
+}
+
+.boat1 {
+  position: absolute;
+  z-index: 15;
+  width: 150px;
+  height: 40px;
+  background-color: bisque;
+  top: 570px;
+  left: 600px;
+  border-radius: 3% 0 30% 30%;
+}
+
+.boat2 {
+  position: absolute;
+  z-index: 15;
+  width: 150px;
+  height: 20px;
+  background-color: black;
+  top: 560px;
+  left: 600px;
+  border-radius: 3% 0 30% 30%;
+}
+
+.boat3 {
+  position: absolute;
+  z-index: 15;
+  width: 10px;
+  height: 110px;
+  background-color: black;
+  top: 450px;
+  left: 650px;
+}
+
+.boat4 {
+  position: absolute;
+  z-index: 15;
+  top: 455px;
+  left: 660px;
+  width: 0;
+  height: 0;
+  border-right: 50px solid transparent;
+  border-top: 50px solid transparent;
+  border-left: 50px solid  bisque;
+  border-bottom: 50px solid bisque;
+}
+
+.boat5 {
+  position: absolute;
+  background-color: darkorange;
+  z-index: 15;
+  height: 20px;
+  width: 20px;
+  top: 450px;
+  left: 660px;
+}
+
+.boat6 {
+  position: absolute;
+  z-index: 15;
+  width: 150px;
+  height: 15px;
+  background-color: red;
+  top: 582px;
+  left: 600px;
+  border-radius: 3% 0 30% 30%;
+}
+
+.boat7 {
+  position: absolute;
+  background-color:blue;
+  z-index: 15;
+  height: 10px;
+  width: 10px;
+  top: 455px;
+  left: 665px;
+  clip-path: polygon(
+    50% 2%,
+    38% 35%,
+    2% 35%,
+    30% 60%,
+    12% 98%,
+    50% 72%,
+    88% 98%,
+    70% 60%,
+    98% 35%,
+    62% 35%,
+    50% 2%);
+}
+
+.boat8 {
+  position: absolute;
+  z-index: 5;
+  height: 0px;
+  width: 0px;
+  top: 505px;
+  right: 250px; 
+  border-right: 20px solid transparent;
+  border-top: 20px solid transparent;
+  border-left: 10px solid  rgb(38, 38, 49);
+  border-bottom: 15px solid  rgb(38, 38, 49);
+  transform: rotate(35deg);
+}
+
+.bird {
+  position: absolute;
+  background-color:black;
+  height: 4px;
+  width: 20px;
+  border-radius: 90% 90% 95%  90%/ 80%  90% 80% 70%;
+  transform: rotate(40deg);
+ 
+}
+
+.bird1 {
+  top: 200px;
+  left: 200px;
+}
+
+.bird2 {
+  top: 350px;
+  left: 200px;
+  transform: rotate(20deg);
+}
+
+.bird3 {
+  top: 250px;
+  left: 150px;
+  transform: rotate(10deg);
+}
+
+.bird4 {
+  top: 450px;
+  left: 350px;
+  transform: rotate(10deg);
+}
+
+.bird5 {
+  top: 450px;
+  left: 560px;
+  transform: rotate(40deg);
+}
+
+.bird6 {
+  top: 450px;
+  right: 560px;
+  transform: rotate(20deg);
+}
+
+.bird7 {
+  top: 350px;
+  right: 500px;
+  transform: rotate(30deg); 
+}
+
+.bird8 {
+  top: 250px;
+  right: 350px;
+  transform: rotate(5deg);  
+}
+
 
